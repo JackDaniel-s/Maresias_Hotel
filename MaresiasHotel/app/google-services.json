@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008482629111",
+    "project_id": "maresias-hotel",
+    "storage_bucket": "maresias-hotel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008482629111:android:9c080967d60aa799d3aaf2",
+        "android_client_info": {
+          "package_name": "com.example.maresiashotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008482629111-ghjea7hp0e7a32sb2kuhlpjovh0msbb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJV3TxwWZvchsDAqZ5n7af6OnWhysb6HE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008482629111-ghjea7hp0e7a32sb2kuhlpjovh0msbb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

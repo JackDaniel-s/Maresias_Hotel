@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaHome">
+
+    <ImageView
+        android:id="@+id/destaque1"
+        style="@style/ContainerComponents"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_sobre" />
+
+    <ImageView
+        android:id="@+id/destaque2"
+        style="@style/ContainerComponents"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destaque1" />
+
+    <ImageView
+        android:id="@+id/destaque3"
+        style="@style/ContainerComponents"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destaque2"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/textemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="contato@hotelmaresias.com.br"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textnumero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textnumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:text="(13) 4351-0198"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bt_localizacao"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagemdestaque1"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:src="@drawable/quarto1"
+        app:layout_constraintBottom_toBottomOf="@+id/destaque1"
+        app:layout_constraintEnd_toEndOf="@+id/destaque1"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/destaque1"
+        app:layout_constraintTop_toTopOf="@+id/destaque1"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/imagemdestaque2"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:src="@drawable/quarto2"
+        app:layout_constraintBottom_toBottomOf="@+id/destaque2"
+        app:layout_constraintEnd_toEndOf="@+id/destaque2"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/destaque2"
+        app:layout_constraintTop_toTopOf="@+id/destaque2"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/imagemdestaque3"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:src="@drawable/quarto3"
+        app:layout_constraintBottom_toBottomOf="@+id/destaque3"
+        app:layout_constraintEnd_toEndOf="@+id/destaque3"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/destaque3"
+        app:layout_constraintTop_toTopOf="@+id/destaque3"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/nome_destaque1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="Quarto com vista para a cidade"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/destaque1"
+        app:layout_constraintTop_toTopOf="@+id/destaque1" />
+
+    <TextView
+        android:id="@+id/nome_destaque2"
+        android:layout_width="209dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:text="Quarto com vista ampla a o mar"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/destaque2"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="@+id/destaque2"
+        app:layout_constraintTop_toTopOf="@+id/destaque2" />
+
+    <TextView
+        android:id="@+id/nome_destaque3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Quarto executivo"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/destaque3"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="@+id/destaque3"
+        app:layout_constraintTop_toTopOf="@+id/destaque3" />
+
+    <TextView
+        android:id="@+id/descricao1"
+        android:layout_width="212dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:text="Este quarto não possui vista direto para o mar, porém tem a melhor vista para a cidade do Guarujá. Esse pacote inclui, tv a cabo, café da manhã e WI-FI."
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/destaque1"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/imagemdestaque1"
+        app:layout_constraintTop_toBottomOf="@+id/nome_destaque1" />
+
+    <TextView
+        android:id="@+id/descricao2"
+        android:layout_width="214dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:text="Este quarto com vista de frente para o mar oferece uma das melhores vistas da cidade do Guarujá. Esse pacote inclui, tv a cabo, café da manhã e WI-FI."
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/destaque2"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/imagemdestaque2"
+        app:layout_constraintTop_toBottomOf="@+id/nome_destaque2" />
+
+    <TextView
+        android:id="@+id/descricao3"
+        android:layout_width="211dp"
+        android:layout_height="90dp"
+        android:text="Este quarto possui o melhor conforto e as melhores vistas da cidade do Guarujá. Esse pacote inclui tv a cabo, café da manhã, WI-FI, pacote exclusivo para turista e guarda sol na beira da praia."
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/destaque3"
+        app:layout_constraintStart_toEndOf="@+id/imagemdestaque3"
+        app:layout_constraintTop_toBottomOf="@+id/nome_destaque3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_localizacao"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/peru"
+        android:text="LOCALIZAÇÃO"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/bt_sobre"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/peru"
+        android:text="SOBRE"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/agendamento1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:text="VISUALIZAR"
+        android:textColor="@color/peru"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/destaque1"
+        app:layout_constraintEnd_toEndOf="@+id/destaque1"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toEndOf="@+id/imagemdestaque1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/agendamento2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:text="VISUALIZAR"
+        android:textColor="@color/peru"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/destaque2"
+        app:layout_constraintEnd_toEndOf="@+id/destaque2"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toEndOf="@+id/imagemdestaque2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/agendamento3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:text="VISUALIZAR"
+        android:textColor="@color/peru"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/destaque3"
+        app:layout_constraintEnd_toEndOf="@+id/destaque3"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toEndOf="@+id/imagemdestaque3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
